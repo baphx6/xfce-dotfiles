@@ -1,4 +1,4 @@
-![/screenshots/Screenshot_2023-08-03_20_16_48.png]
+![screenshots/Screenshot_2023-08-03_20_16_48.png]
 
 ## Themes, Icons and Font
 
