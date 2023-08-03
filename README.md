@@ -1,5 +1,4 @@
-![screenshots/Screenshot_2023-08-03_20_16_48.png]
-
+![alt text](screenshots/Screenshot_2023-08-03_20_16_48.png)
 ## Themes, Icons and Font
 
 Dracula and Kali Purple. If for some reason they aren' recognized inside de `$HOME` folder move them to `/usr/share/{icons,themes}`. Fonts used are `Fira Code` and `Cantarell`.
