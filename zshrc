@@ -262,6 +262,28 @@ function mkt {
 	fi
 }
 
+function portsNmap {
+  if [ -z "$1" ]; then
+    echo "Usage: portsNmap <file_path> (grep format)"
+    return 1
+  fi
+
+  if [ ! -f "$1" ]; then
+    echo "Error: File not found - $1"
+    return 1
+  fi
+
+  port_numbers=$(grep -oP '\d+/open/tcp//' "$1" | awk -F'/' '{printf "%s,", $1}' | sed 's/,$//')
+
+  if [ -z "$port_numbers" ]; then
+    echo "No open ports found in $1"
+  else
+    echo "Open ports in $1: $port_numbers"
+    echo -n $port_numbers | xclip -sel clipboard
+    echo "Copied to clipboard!"
+  fi
+}
+
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
     . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
