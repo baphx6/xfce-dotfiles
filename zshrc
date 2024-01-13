@@ -284,6 +284,25 @@ function portsNmap {
   fi
 }
 
+function whichService {
+
+	# Create array of ports
+	IFS=',' read -r -a ports <<< "$1"
+	# Print it
+	# echo "${ports[@]}"
+	for port in "${ports[@]}"; do
+		# echo "searching for $port..."
+		echo "------ port $port ------"
+		grep -rlE "port $port|TCP/$port|UDP/$port" /Grimmoire/Networking
+		grep -rlE "port $port|TCP/$port|UDP/$port" /Grimmoire/Enumeration
+		echo ""
+	done
+	echo "Remember to check for false positives"
+	echo "Other services might be served on ports other than the default one"
+	echo "The Grimmoire might not have a  note for a certain service *yet*"
+
+}
+
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
     . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
