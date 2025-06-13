@@ -1,0 +1,145 @@
+# Common recent settings file for Wireshark 4.0.10.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /home/baphx6/htb/machines/carrier/data/ftp.cap
+recent.capture_file: /home/baphx6/htb/machines/carrier/data/icmp-decoded.cap
+recent.capture_file: /home/baphx6/Sniffing/pruebas_ubu22_mitm.pcapng
+recent.capture_file: /home/baphx6/cert-socat/pcaps/no-encriptado.pcapng
+recent.capture_file: /home/baphx6/cert-socat/pcaps/encriptado.pcapng
+recent.capture_file: /home/baphx6/Sniffing/prueba.pcap
+recent.capture_file: /home/baphx6/htb/academy/ad_enum/arp.pcap
+recent.capture_file: /home/baphx6/htb/machines/Cap/data/1.pcap
+recent.capture_file: /home/baphx6/htb/machines/Cap/data/3.pcap
+recent.capture_file: /home/baphx6/htb/machines/Cap/data/0.pcap
+
+######## Recent capture filters (latest last), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: ftp
+recent.display_filter: rdp or tpkt
+recent.display_filter: rdp
+recent.display_filter: tpkt
+recent.display_filter: socks
+recent.display_filter: tcp
+recent.display_filter: udp
+recent.display_filter: icmp
+recent.display_filter: ip.addr==192.168.122.217 && udp.port==52893 && ip.addr==192.168.122.175 && udp.port==13
+recent.display_filter: ip.addr==192.168.122.217 && tcp.port==54948 && ip.addr==192.168.122.175 && tcp.port==3000
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 0
+gui.geometry_main_y: 35
+gui.geometry_main_width: 1916
+gui.geometry_main_height: 1011
+
+# Main window maximized.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_main_maximized: TRUE
+
+# Leftalign Action Buttons.
+# TRUE or FALSE (case-insensitive).
+gui.geometry_leftalign_actions: FALSE
+
+# Statusbar left pane size.
+# Decimal number.
+gui.geometry_status_pane: 250
+
+# Statusbar middle pane size.
+# Decimal number.
+gui.geometry_status_pane_right: 250
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# WLAN statistics upper pane size.
+# Decimal number.
+gui.geometry_status_wlan_stats_pane: 200
+
+# Warn if running with elevated permissions (e.g. as root).
+# TRUE or FALSE (case-insensitive).
+privs.warn_if_elevated: TRUE
+
+# Warn if Wireshark is unable to capture.
+# TRUE or FALSE (case-insensitive).
+sys.warn_if_no_capture: TRUE
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# TRUE or FALSE (case-insensitive).
+gui.search_case_sensitive: FALSE
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of ip_hosts window.
+# Decimal integers.
+gui.geom.ip_hosts.x: 556
+gui.geom.ip_hosts.y: 264
+gui.geom.ip_hosts.width: 800
+gui.geom.ip_hosts.height: 459
+# TRUE or FALSE (case-insensitive).
+gui.geom.ip_hosts.maximized: FALSE
+
+# Geometry and maximized state of TrafficTableDialog window.
+# Decimal integers.
+gui.geom.TrafficTableDialog.x: 0
+gui.geom.TrafficTableDialog.y: 35
+gui.geom.TrafficTableDialog.width: 1916
+gui.geom.TrafficTableDialog.height: 1011
+# TRUE or FALSE (case-insensitive).
+gui.geom.TrafficTableDialog.maximized: FALSE
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 190
+gui.geom.PacketDialog.y: 89
+gui.geom.PacketDialog.width: 1532
+gui.geom.PacketDialog.height: 808
+# TRUE or FALSE (case-insensitive).
+gui.geom.PacketDialog.maximized: FALSE
+
+# Geometry and maximized state of FollowStreamDialog window.
+# Decimal integers.
+gui.geom.FollowStreamDialog.x: 318
+gui.geom.FollowStreamDialog.y: 35
+gui.geom.FollowStreamDialog.width: 1277
+gui.geom.FollowStreamDialog.height: 1011
+# TRUE or FALSE (case-insensitive).
+gui.geom.FollowStreamDialog.maximized: FALSE
+
+# Geometry and maximized state of dns window.
+# Decimal integers.
+gui.geom.dns.x: 0
+gui.geom.dns.y: 35
+gui.geom.dns.width: 1916
+gui.geom.dns.height: 1011
+# TRUE or FALSE (case-insensitive).
+gui.geom.dns.maximized: FALSE
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"
